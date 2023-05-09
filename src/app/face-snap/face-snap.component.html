@@ -1,0 +1,17 @@
+
+<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'liked' }">
+
+    <h2>{{ faceSnap.title| titlecase }}</h2>
+    <p>Posted online on {{ faceSnap.createdDate | date:'dd/MM/yy, HH:mm'}}</p>
+    <img [src] ="faceSnap.imageUrl" alt ="faceSnap.title">
+    <p>{{ faceSnap.description }}</p>
+    <p *ngIf="faceSnap.location"> Photo taken at {{faceSnap.location}} </p>
+    <p>
+        <button (click)="onSnap()"> {{buttonText}} </button>
+
+       <span [ngStyle]="{ color:'rgb(0,'+ faceSnap.snaps +', 0)'}">The number of likes: {{ faceSnap.snaps }} </span> 
+    </p>
+</div>
+
+
+  

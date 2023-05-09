@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { FaceSnap } from './model/face-snap.models';
+import { Component, OnInit } from '@angular/core'; 
+import { FaceSnap } from '../model/face-snap.models';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-face-snap-list',
+  templateUrl: './face-snap-list.component.html',
+  styleUrls: ['./face-snap-list.component.scss']
 })
-export class AppComponent implements OnInit{
+export class FaceSnapListComponent implements OnInit {
 
   faceSnaps!: FaceSnap[];
 
-  ngOnInit(){
+  constructor(){}
+  
+  ngOnInit(): void {
     this.faceSnaps = [
       {
         title:' Lamborghini',
@@ -33,10 +35,9 @@ export class AppComponent implements OnInit{
         description: 'Que c\'est  bon de manger',
         imageUrl: 'https://avatars.mds.yandex.net/i?id=b218ad6ec11cb5bd919d1e565aa553a2-4034093-images-thumbs&n=13',
         createdDate: new Date(),
-        snaps: 20
+        snaps: 50
       }
     ];
  
   }
 }
- 
