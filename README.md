@@ -1,5 +1,8 @@
 снимок экрана приложения
 
+<img width="266" alt="snapface0" src="https://github.com/biro224/SnapFace/assets/103885795/7d35e734-f061-47e8-8d36-ba3dd546c8b3">
+
+
 <img width="498" alt="snapface1" src="https://github.com/biro224/SnapFace/assets/103885795/c25d07ab-8cce-4bb0-882b-78966be3b9d0">
 
 зеленый цвет указывает на то, что кнопка like была применена
